@@ -12,7 +12,7 @@ graph = [[0, 7, NO_PATH, 8],
          [NO_PATH, NO_PATH, NO_PATH, 0]]
 MAX_LENGTH: int = len(graph[0])
 
-#This function implements the iterative version of the Floyd Marshal algorithm
+#This function implements the imperative version of the Floyd Marshal algorithm using iteration
 
 def floyd(distance):
     """
@@ -21,13 +21,13 @@ def floyd(distance):
     for intermediate, start_node, end_node in itertools.product(range(MAX_LENGTH), range(MAX_LENGTH),
                          range(MAX_LENGTH)):
 
-        # Assume that if start_node and end_node are the same
-        # then the distance would be zero
+        # Assume that distance is zero if tart_node == end_node 
+      
         if start_node == end_node:
             distance[start_node][end_node] = 0
             continue
 
-        # return all possible paths and find the minimum
+        # rfind the minimum duistance and return the path result
         distance[start_node][end_node] = min(distance[start_node][end_node],distance[start_node][intermediate] +
                                              distance[intermediate][end_node])
 
