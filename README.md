@@ -14,6 +14,17 @@ $ ./floyd.resursive_final
 
 $ ./floyd.imperative_final
 
+Output:
+
+After running the recursive and imperative programs in your terminal you should see the following results:
+
+[[0, 7, 12, 8], [9223372036854775807, 0, 5, 7], [9223372036854775807, 9223372036854775807, 0, 2], [9223372036854775807, 9223372036854775807, 9223372036854775807, 0]]
+
+
+<<><><>><><><><><><><>
+Timeit Performance Test Result: 
+0.005245162999999999
+<<><><>><><><><><><><>
 
 Tests:
 
