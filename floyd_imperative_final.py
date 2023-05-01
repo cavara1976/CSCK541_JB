@@ -27,18 +27,18 @@ def floyd(distance):
             distance[start_node][end_node] = 0
             continue
 
-        # rfind the minimum duistance and return the path result
+        # find the minimum distance and return the path result
         distance[start_node][end_node] = min(distance[start_node][end_node],distance[start_node][intermediate] +
                                              distance[intermediate][end_node])
 
-    # Any value that have sys.maxsize has no path
+    # Print the distance
     print(distance)
 
 
 # Driver's code
 if __name__ == '__main__':
 
-# Calls the function printSolution and passes the graph as an argument 
+# Calls the function floyd and passes the graph as an argument 
     floyd(graph)
 
 print("<<><><>><><><><><><><>")
