@@ -6,7 +6,7 @@ from floyd_imperative_final import floyd
 NO_PATH = sys.maxsize
 
 
-# Test the printSolution and floyd functions in the recursive and imperative function
+# Test the validity of the printSolution and floyd functions 
 class OutputTest(unittest.TestCase):
 
     def test_floyd_function(self):
