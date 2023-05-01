@@ -31,6 +31,3 @@ Tests:
 This code runs performances tests using Python's timeit function in the floyd_imperative_final and floyd_resursive_final source code files.
 A separate unit test file has been included to test the recursive version of the algorithm.
 
-Licence:
-
-Copyright 2023 Jonathan Brome
