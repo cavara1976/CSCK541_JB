@@ -21,7 +21,7 @@ MAX_LENGTH: int = len(graph[0])
 # New function that calculates the shortest path using a recursive function
 def shortestPath(i, j, k, d):
        
-        # Return weight when there are no intermediary vertices
+        
         # base condition - no intermediate vertices are used
         if k == 0:
             
